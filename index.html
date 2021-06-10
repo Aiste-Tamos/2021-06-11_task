@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Task</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top-wrapper">
+            <span class="header__logo">Logo</span>
+            <div class="menu__btn" id="menu-btn" role="button" tabindex="0">
+                <div class="menu__bar1"></div>
+                <div class="menu__bar2"></div>
+                <div class="menu__bar3"></div>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Shop</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Reviews</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Blog</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+            <div class="slider">
+                <div class="slides fade">
+                    <img src="http://placehold.jp/70/e6e6e6/707070/400x450.png?text=SLIDER"
+                          alt="Slide 1 image placeholder"
+                          srcset="
+                            http://placehold.jp/70/e6e6e6/707070/400x450.png?text=SLIDER 640w,
+                            http://placehold.jp/70/e6e6e6/707070/640x450.png?text=SLIDER 916w,
+                            http://placehold.jp/70/e6e6e6/707070/1000x450.png?text=SLIDER 1030w,
+                            http://placehold.jp/70/e6e6e6/707070/1300x450.png?text=SLIDER 1500w,
+                          "
+                          sizes="
+                            (min-width: 600px) 640px,
+                            (min-width: 900px) 916px,
+                            (min-width: 1200px) 1030px,
+                            (min-width: 1400px) 1500px,
+                            100vw 
+                          "
+                    >
+                </div>
+                <div class="slides fade">
+                    <img src="http://placehold.jp/70/e6e6e6/707070/400x450.png?text=SLIDER2"
+                          alt="Slide 2 image placeholder"
+                          srcset="
+                            http://placehold.jp/70/e6e6e6/707070/400x450.png?text=SLIDER2 640w,
+                            http://placehold.jp/70/e6e6e6/707070/640x450.png?text=SLIDER2 916w,
+                            http://placehold.jp/70/e6e6e6/707070/800x450.png?text=SLIDER2 1030w,
+                            http://placehold.jp/70/e6e6e6/707070/1300x450.png?text=SLIDER2 1500w,
+                          "
+                          sizes="
+                            (min-width: 600px) 640px,
+                            (min-width: 900px) 916px,
+                            (min-width: 1200px) 1030px,
+                            (min-width: 1400px) 1500px,
+                            100vw 
+                          "
+                    >
+                </div>
+                <div class="slides fade">
+                    <img src="http://placehold.jp/70/e6e6e6/707070/400x450.png?text=SLIDER3"
+                          alt="Slide 3 image placeholder"
+                          srcset="
+                            http://placehold.jp/70/e6e6e6/707070/400x450.png?text=SLIDER3 640w,
+                            http://placehold.jp/70/e6e6e6/707070/640x450.png?text=SLIDER3 916w,
+                            http://placehold.jp/70/e6e6e6/707070/800x450.png?text=SLIDER3 1030w,
+                            http://placehold.jp/70/e6e6e6/707070/1300x450.png?text=SLIDER3 1500w,
+                          "
+                          sizes="
+                            (min-width: 600px) 640px,
+                            (min-width: 900px) 916px,
+                            (min-width: 1200px) 1030px,
+                            (min-width: 1400px) 1500px,
+                            100vw 
+                          "
+                    >
+                </div>
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <section class="images-gallery">
+                <div class="image">
+                    <img src="http://placehold.jp/50/e6e6e6/707070/400x500.png?text=IMG" alt="Product image placeholder">
+                    <span class="image__text">Product name</span> 
+                </div>
+                <div class="image">
+                    <img src="http://placehold.jp/50/e6e6e6/707070/400x500.png?text=IMG" alt="Product image placeholder">
+                    <span class="image__text">Product name</span>
+                </div>
+                <div class="image">
+                    <img src="http://placehold.jp/50/e6e6e6/707070/400x500.png?text=IMG" alt="Product image placeholder">
+                    <span class="image__text">Product name</span>
+                </div>
+                <div class="image">
+                    <img src="http://placehold.jp/50/e6e6e6/707070/400x500.png?text=IMG" alt="Product image placeholder">
+                    <span class="image__text">Product name</span>
+                </div>
+                <div class="image--hidden">
+                    <img src="http://placehold.jp/50/e6e6e6/707070/400x500.png?text=IMG" alt="Product image placeholder">
+                    <span class="image__text">Product name</span> 
+                </div>
+                <div class="image--hidden">
+                    <img src="http://placehold.jp/50/e6e6e6/707070/400x500.png?text=IMG" alt="Product image placeholder">
+                    <span class="image__text">Product name</span>
+                </div>
+                <div class="image--hidden">
+                    <img src="http://placehold.jp/50/e6e6e6/707070/400x500.png?text=IMG" alt="Product image placeholder">
+                    <span class="image__text">Product name</span>
+                </div>
+                <div class="image--hidden">
+                    <img src="http://placehold.jp/50/e6e6e6/707070/400x500.png?text=IMG" alt="Product image placeholder">
+                    <span class="image__text">Product name</span>
+                </div>
+            </section>
+            <div class="button-wrapper">
+                <button class="images-gallery__button">show more...</button>
+            </div>
+            <section class="questions">
+                <h2>FREQUENTLY ASKED QUESTIONS (FAQs)</h2>
+                <dl>
+                    <dt class="question">Lorem ipsum has been the industry's standard?
+                        <div class="open-answer-btn" id="open-answer-btn-1" role="button" tabindex="0">
+                            <span class="plus">&plus;</span>
+                            <span class="minus">&minus;</span>
+                        </div>
+                    </dt>
+                    <hr>
+                    <dd class="answer">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</dd>
+                    <dt class="question" >Lorem ipsum has been the industry's standard?
+                        <div class="open-answer-btn" id="open-answer-btn-2" role="button" tabindex="0">
+                            <span class="plus">&plus;</span>
+                            <span class="minus">&minus;</span>
+                        </div>
+                    </dt>
+                    <hr>
+                    <dd class="answer">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</dd>
+                    <dt class="question">Lorem ipsum has been the industry's standard?
+                        <div class="open-answer-btn" id="open-answer-btn-3" role="button" tabindex="0">
+                            <span class="plus">&plus;</span>
+                            <span class="minus">&minus;</span>
+                        </div>
+                    </dt>
+                    <hr>
+                    <dd class="answer">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</dd>
+                    <dt class="question">Lorem ipsum has been the industry's standard?
+                        <div class="open-answer-btn" id="open-answer-btn-4" role="button" tabindex="0">
+                            <span class="plus">&plus;</span>
+                            <span class="minus">&minus;</span>
+                        </div>
+                    </dt>
+                    <hr>
+                    <dd class="answer">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</dd>
+                    <dt class="question">Lorem ipsum has been the industry's standard?
+                        <div class="open-answer-btn" id="open-answer-btn-5" role="button" tabindex="0">
+                            <span class="plus">&plus;</span>
+                            <span class="minus">&minus;</span>
+                        </div>
+                    </dt>
+                    <hr>
+                    <dd class="answer">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</dd>
+                    <dt class="question">Lorem ipsum has been the industry's standard?
+                        <div class="open-answer-btn" id="open-answer-btn-6" role="button" tabindex="0">
+                            <span class="plus">&plus;</span>
+                            <span class="minus">&minus;</span>
+                        </div>
+                    </dt>
+                    <hr>
+                    <dd class="answer">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</dd>
+                    <dt class="question">Lorem ipsum has been the industry's standard?
+                        <div class="open-answer-btn" id="open-answer-btn-7" role="button" tabindex="0">
+                            <span class="plus">&plus;</span>
+                            <span class="minus">&minus;</span>
+                        </div>
+                    </dt>
+                    <hr>
+                    <dd class="answer">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</dd>
+                    <dt class="question">Lorem ipsum has been the industry's standard?
+                        <div class="open-answer-btn" id="open-answer-btn-8" role="button" tabindex="0">
+                            <span class="plus">&plus;</span>
+                            <span class="minus">&minus;</span>
+                        </div>
+                    </dt>
+                    <hr>
+                    <dd class="answer">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</dd>
+                    <dt class="question">Lorem ipsum has been the industry's standard?
+                        <div class="open-answer-btn" id="open-answer-btn-9" role="button" tabindex="0">
+                            <span class="plus">&plus;</span>
+                            <span class="minus">&minus;</span>
+                        </div>
+                    </dt>
+                    <hr>
+                    <dd class="answer">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</dd>
+                </dl>
+            </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__content">Footer</div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
