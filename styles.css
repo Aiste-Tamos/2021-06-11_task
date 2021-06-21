@@ -104,7 +104,7 @@ body {
 }
 
 .slides {
-    display: none; 
+    display: none;
 }
 
 .slides img {
@@ -233,45 +233,44 @@ body {
 }
 
 .open-answer-btn {
-  width: 40px;
-  height: 40px;
-  position: relative;
-  font-size: 40px;
-  cursor: pointer;
-  border: 0;
-  outline: 0;
-  padding: 0;
-  top: -5px;
+    position: relative;
+    font-size: 40px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    margin-left: 5px;
+    padding: 0;
 }
 
-.plus,
-.minus {
-  color: #2b2b2b;
-  line-height: 50px;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  transition: .5s all ease-out;
+.plus-minus-toggle {
+    cursor: pointer;
+    height: 21px;
+    position: relative;
+    width: 21px;
 }
-.plus {
-  opacity: 1;
-  transform: rotate(0deg);
+
+.plus-minus-toggle:before,
+.plus-minus-toggle:after {
+    background: #000;
+    content: '';
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    width: 18px;
+    transition: transform 0.5s ease;
 }
-.open-answer-btn--changed .plus {
-  opacity: 0;
-  transform: rotate(90deg);
+
+.plus-minus-toggle:after {
+    transform-origin: center;
 }
-.minus {
-  opacity: 0;
-  transform: rotate(-90deg);
+
+.plus-minus-toggle.collapsed:after {
+    transform: rotate(90deg);
 }
-.open-answer-btn--changed .minus {
-  opacity: 1;
-  transform: rotate(0deg);
+
+.plus-minus-toggle.collapsed:before {
+    transform: rotate(180deg);
 }
 
 .answer {
@@ -368,5 +367,5 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 20px;
-    };
-};
+    }
+}

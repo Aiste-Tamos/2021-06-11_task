@@ -20,12 +20,12 @@ window.onload=function(){
     for (let i=0; i<imagesToShow.length; i+=1){
       imagesToShow[i].style.display = 'flex';
       showMoreBtn.disabled = true;
-}
+    }
   });
 }
 
 /////Open answer button functionality
-const btns = Array.from(document.querySelectorAll(".open-answer-btn"));
+const btns = Array.from(document.querySelectorAll(".plus-minus-toggle"));
 const answers = Array.from(document.querySelectorAll(".answer"));
 
   answers.forEach((answer, i) => {
@@ -33,7 +33,7 @@ const answers = Array.from(document.querySelectorAll(".answer"));
       button.addEventListener('click', () => {
         if(i === index){
         answer.classList.toggle("answer--open");
-        button.classList.toggle("open-answer-btn--changed");
+        button.classList.toggle('collapsed');
         }
       })
     });
