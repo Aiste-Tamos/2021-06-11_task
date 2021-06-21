@@ -37,61 +37,31 @@
     <main class="main-content">
             <div class="slider">
                 <div class="slides fade">
-                    <img src="https://placehold.jp/70/e6e6e6/707070/400x450.png?text=SLIDER"
-                          loading=lazy
-                          alt="Slide 1 image placeholder"
-                          srcset="
-                            https://placehold.jp/70/e6e6e6/707070/400x450.png?text=SLIDER 640w,
-                            https://placehold.jp/70/e6e6e6/707070/640x450.png?text=SLIDER 916w,
-                            https://placehold.jp/70/e6e6e6/707070/1000x450.png?text=SLIDER 1030w,
-                            https://placehold.jp/70/e6e6e6/707070/1300x450.png?text=SLIDER 1500w,
-                          "
-                          sizes="
-                            (min-width: 600px) 640px,
-                            (min-width: 900px) 916px,
-                            (min-width: 1200px) 1030px,
-                            (min-width: 1400px) 1500px,
-                            100vw 
-                          "
-                    >
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="https://placehold.jp/70/e6e6e6/707070/400x450.png?text=SLIDER">
+                        <source media="(max-width: 650px)" srcset="https://placehold.jp/70/e6e6e6/707070/640x450.png?text=SLIDER">
+                        <source media="(max-width: 999px)" srcset="https://placehold.jp/70/e6e6e6/707070/1000x450.png?text=SLIDER">
+                        <source media="(min-width: 1000px)" srcset="https://placehold.jp/70/e6e6e6/707070/1300x450.png?text=SLIDER">
+                        <img src="https://placehold.jp/70/e6e6e6/707070/400x450.png?text=SLIDER" alt="Slide 1 image placeholder">
+                      </picture>
                 </div>
                 <div class="slides fade">
-                    <img src="https://placehold.jp/70/e6e6e6/707070/400x450.png?text=SLIDER2"
-                          loading=lazy
-                          alt="Slide 2 image placeholder"
-                          srcset="
-                            https://placehold.jp/70/e6e6e6/707070/400x450.png?text=SLIDER2 640w,
-                            https://placehold.jp/70/e6e6e6/707070/640x450.png?text=SLIDER2 916w,
-                            https://placehold.jp/70/e6e6e6/707070/800x450.png?text=SLIDER2 1030w,
-                            https://placehold.jp/70/e6e6e6/707070/1300x450.png?text=SLIDER2 1500w,
-                          "
-                          sizes="
-                            (min-width: 600px) 640px,
-                            (min-width: 900px) 916px,
-                            (min-width: 1200px) 1030px,
-                            (min-width: 1400px) 1500px,
-                            100vw 
-                          "
-                    >
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="https://placehold.jp/70/e6e6e6/707070/400x450.png?text=SLIDER2">
+                        <source media="(max-width: 650px)" srcset="https://placehold.jp/70/e6e6e6/707070/640x450.png?text=SLIDER2">
+                        <source media="(max-width: 999px)" srcset="https://placehold.jp/70/e6e6e6/707070/1000x450.png?text=SLIDER2">
+                        <source media="(min-width: 1000px)" srcset="https://placehold.jp/70/e6e6e6/707070/1300x450.png?text=SLIDER2">
+                        <img src="https://placehold.jp/70/e6e6e6/707070/400x450.png?text=SLIDER2" alt="Slide 2 image placeholder">
+                      </picture>
                 </div>
                 <div class="slides fade">
-                    <img src="https://placehold.jp/70/e6e6e6/707070/400x450.png?text=SLIDER3"
-                          loading="lazy"
-                          alt="Slide 3 image placeholder"
-                          srcset="
-                            https://placehold.jp/70/e6e6e6/707070/400x450.png?text=SLIDER3 640w,
-                            https://placehold.jp/70/e6e6e6/707070/640x450.png?text=SLIDER3 916w,
-                            https://placehold.jp/70/e6e6e6/707070/800x450.png?text=SLIDER3 1030w,
-                            https://placehold.jp/70/e6e6e6/707070/1300x450.png?text=SLIDER3 1500w,
-                          "
-                          sizes="
-                            (min-width: 600px) 640px,
-                            (min-width: 900px) 916px,
-                            (min-width: 1200px) 1030px,
-                            (min-width: 1400px) 1500px,
-                            100vw 
-                          "
-                    >
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="https://placehold.jp/70/e6e6e6/707070/400x450.png?text=SLIDER3">
+                        <source media="(max-width: 650px)" srcset="https://placehold.jp/70/e6e6e6/707070/640x450.png?text=SLIDER3">
+                        <source media="(max-width: 999px)" srcset="https://placehold.jp/70/e6e6e6/707070/1000x450.png?text=SLIDER3">
+                        <source media="(min-width: 1000px)" srcset="https://placehold.jp/70/e6e6e6/707070/1300x450.png?text=SLIDER3">
+                        <img src="https://placehold.jp/70/e6e6e6/707070/400x450.png?text=SLIDER3" alt="Slide 3 image placeholder">
+                      </picture>
                 </div>
                 <div class="dots">
                     <span class="dot" onclick="currentSlide(1)"></span>
